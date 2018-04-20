@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
 	@RequestMapping("/test")
-	public String test() {
-		return "Hello Git";
+	public String test(String name) {
+		return "Hello Git"+name;
 	}
 }
